@@ -2,9 +2,6 @@
 user_input = input("Input your full name: ")
 
 # Remove spaces without using .lstrip()
-while True:
-    try:
-        output = user_input.replace(" ", "")
-        print(output)
-    except ValueError:
-        break
+while user_input and user_input[0] == ' ':
+    output = user_input[1:]
+    print(output)
