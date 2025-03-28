@@ -2,8 +2,10 @@
 user_input = input("Input your statement: ")
 
 # Check is user input is uppercase without using .isupper()
+output = ""
 for char in user_input:     # Use for loop to check each char
-    if char not in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
-        print("False")
+    if char in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+        output = True
     else:
-        print("True")
+        output = False
+print(output)
