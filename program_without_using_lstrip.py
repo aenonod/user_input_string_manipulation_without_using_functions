@@ -1,5 +1,5 @@
 # Ask for user input with leading whitespaces
-user_input = input("Input your full name: ")
+user_input = input("Input your statement: ")
 
 # Remove spaces without using .lstrip()
 output = user_input
