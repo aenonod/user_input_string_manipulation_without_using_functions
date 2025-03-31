@@ -7,12 +7,10 @@ value = input("Input substring: ")
 # Return the index without using .index()
 position = 0
 while True:
-    try:
         position = user_input.find(value, position, len(user_input))
 
         if position == -1:
+            print("Substring not found.")
             break
         output = print(f"Substring found at the index: {position}")
         break
-    except ValueError:
-        output = "Substring not found."
