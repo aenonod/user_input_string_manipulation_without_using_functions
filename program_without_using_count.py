@@ -5,14 +5,14 @@ user_input = input("Input text/number: ")
 word_to_count = input("Input text/number to count: ")
 
 # Ask where to start and end the counting process
-start = input("Input index where to start: ")
-end = input("Input index where to end: ")
+start = int(input("Index where to start: "))
+end = int(input("Index where to end: "))
 
 # Count the occurences of the specified string without using .count()
 count = 0
-position = 0
+position = start
 while True:
-    position = user_input.find(word_to_count, start, end)
+    position = user_input.find(word_to_count, position, end)
     
     if position == -1:
         break
