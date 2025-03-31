@@ -6,5 +6,5 @@ width = int(input("Input length of the string: "))
 
 # Add zeros in front of the user_input without using .zfill()
 while len(user_input) < width:
-    output = "0" + user_input
-print(output)
+    user_input = "0" + user_input
+print(user_input)
