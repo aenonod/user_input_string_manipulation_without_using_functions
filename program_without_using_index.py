@@ -13,5 +13,6 @@ while True:
         if position == -1:
             break
         output = print(f"Substring found at the index: {position}")
+        break
     except ValueError:
         output = "Substring not found."
